@@ -1,0 +1,29 @@
+{
+  "name": "vuepress-theme-purple",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A purple theme for Vuepress",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "tyarn install --no-lockfile",
+    "vuepress-docs": "yarn run --cwd=packages/vuepress-docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengxinming/vuepress-theme-purple.git"
+  },
+  "keywords": [
+    "vuepress",
+    "vuepress-theme",
+    "vuepress-theme-purple"
+  ],
+  "author": "Jesse Feng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengxinming/vuepress-theme-purple/issues"
+  },
+  "homepage": "https://github.com/fengxinming/vuepress-theme-purple#readme"
+}
