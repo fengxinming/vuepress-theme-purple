@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-purple",
-  "version": "1.0.0",
+  "version": "1.0.0-0",
   "description": "A purple theme for Vuepress",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,8 @@
   "keywords": [
     "vuepress",
     "vuepress-theme",
-    "vuepress-theme-purple"
+    "vuepress-theme-purple",
+    "vue"
   ],
   "author": "Jesse Feng",
   "license": "MIT",
@@ -19,14 +20,6 @@
   },
   "homepage": "https://github.com/fengxinming/vuepress-theme-purple#readme",
   "dependencies": {
-    "@vuepress/plugin-active-header-links": "^1.2.0",
-    "@vuepress/plugin-nprogress": "^1.2.0",
-    "@vuepress/plugin-search": "^1.2.0",
-    "docsearch.js": "^2.5.2",
-    "lodash": "^4.17.15",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2",
-    "vuepress-plugin-container": "^2.0.2",
-    "vuepress-plugin-smooth-scroll": "^0.0.3"
+    "@vuepress/theme-default": "^1.2.0"
   }
 }

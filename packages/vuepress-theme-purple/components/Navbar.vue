@@ -37,8 +37,8 @@
 <script>
 import AlgoliaSearchBox from '@AlgoliaSearchBox';
 import SearchBox from '@SearchBox';
-import SidebarButton from '@theme/components/SidebarButton.vue';
-import NavLinks from '@theme/components/NavLinks.vue';
+import SidebarButton from '@parent-theme/components/SidebarButton.vue';
+import NavLinks from '@parent-theme/components/NavLinks.vue';
 
 export default {
   components: { SidebarButton, NavLinks, SearchBox, AlgoliaSearchBox },
@@ -93,9 +93,6 @@ function css(el, property) {
 .navbar
   padding $navbarVerticalPadding $navbarHorizontalPadding
   line-height $navbarHeight - $navbarVerticalPadding * 2
-  background-color $primaryBgColor
-  color $primaryTextColor
-  box-shadow 0 0 1rem $primaryBgColor
 
   a, span, img
     display inline-block
