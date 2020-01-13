@@ -90,40 +90,37 @@ function css(el, property) {
 </script>
 
 <style lang="stylus">
-$navbar-vertical-padding = 0.7rem
-$navbar-horizontal-padding = 1.5rem
-
 .navbar
-  padding $navbar-vertical-padding $navbar-horizontal-padding
-  line-height $navbarHeight - $navbar-vertical-padding * 2
-  background $navbarBg
-  color $navbarColor
-  box-shadow 0 0 1rem $navbarBg
+  padding $navbarVerticalPadding $navbarHorizontalPadding
+  line-height $navbarHeight - $navbarVerticalPadding * 2
+  background-color $primaryBgColor
+  color $primaryTextColor
+  box-shadow 0 0 1rem $primaryBgColor
 
   a, span, img
     display inline-block
 
   .logo
-    height $navbarHeight - $navbar-vertical-padding * 2
-    min-width $navbarHeight - 1.4rem
+    height $navbarHeight - $navbarVerticalPadding * 2
+    min-width $navbarHeight - $navbarVerticalPadding * 2
     margin-right 0.8rem
     vertical-align top
 
   .site-name
     font-size 1.3rem
     font-weight 600
-    color $navbarColor
+    color $siteNameColor
     position relative
 
   .links
     padding-left 1.5rem
     box-sizing border-box
-    background-color $navbarBg
+    background-color $primaryBgColor
     white-space nowrap
     font-size 0.9rem
     position absolute
-    right $navbar-horizontal-padding
-    top $navbar-vertical-padding
+    right $navbarHorizontalPadding
+    top $navbarVerticalPadding
     display flex
 
     .search-box
@@ -133,7 +130,7 @@ $navbar-horizontal-padding = 1.5rem
       input
         background-color $searchboxBgColor
         border-color $searchboxBorderColor
-        color $searchboxColor
+        color $primaryTextColor
 
         &:focus
           border-color $searchboxBorderAccentColor

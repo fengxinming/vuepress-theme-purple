@@ -336,9 +336,9 @@ It also supports [line highlighting](#line-highlighting-in-code-blocks):
 **Output**
 
 <!--lint disable strong-marker-->
-
+``` md
 <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
-
+```
 <!--lint enable strong-marker-->
 
 ::: tip

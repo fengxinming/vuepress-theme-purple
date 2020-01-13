@@ -330,16 +330,16 @@ module.exports = {
 
 **输入**
 
-```
+``` md
 <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
 ```
 
 **输出**
 
 <!--lint disable strong-marker-->
-
+``` md
 <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
-
+```
 <!--lint enable strong-marker-->
 
 ::: tip 注意

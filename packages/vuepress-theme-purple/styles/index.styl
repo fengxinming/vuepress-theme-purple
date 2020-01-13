@@ -190,12 +190,15 @@ th, td
     .sidebar
       top 0
 
+// 滚动条宽度
+$scrollbarWidth = 0.5rem
+
 ::-webkit-scrollbar-track-piece
   background #fff
 
 ::-webkit-scrollbar
-  width 0.625rem
-  height 0.625rem
+  width $scrollbarWidth
+  height $scrollbarWidth
 
 ::-webkit-scrollbar-button
   display none
@@ -204,7 +207,7 @@ th, td
   background -webkit-gradient(linear, left)
 
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal
-  border-radius 6px
+  border-radius $scrollbarWidth
   background #bdbdbd
 
 ::-webkit-scrollbar-thumb:hover

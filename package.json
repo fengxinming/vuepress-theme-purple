@@ -9,17 +9,14 @@
   ],
   "scripts": {
     "bootstrap": "tyarn install --no-lockfile",
-    "vuepress-docs": "yarn run --cwd=packages/vuepress-docs"
+    "vuepress-docs": "yarn run --cwd=./packages/vuepress-docs",
+    "release": "npm publish ./packages/vuepress-theme-purple",
+    "gh-pages": "git subtree push --prefix=gh-pages origin gh-pages"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fengxinming/vuepress-theme-purple.git"
   },
-  "keywords": [
-    "vuepress",
-    "vuepress-theme",
-    "vuepress-theme-purple"
-  ],
   "author": "Jesse Feng",
   "license": "MIT",
   "bugs": {

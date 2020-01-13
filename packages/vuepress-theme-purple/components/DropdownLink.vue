@@ -161,24 +161,24 @@ export default {
 .nav-item
   .dropdown-wrapper
     .dropdown-title
-      color $navlinkColor
+      color $primaryTextColor
       outline none
 
     .nav-dropdown
-      background $navbarBg
+      background $primaryBgColor
       border-color transparent
 
       .dropdown-item
         a
           &:hover
-            color $navlinkAccentColor
-            background-color $navlinkBgAccentColor
+            color $primaryTextAccentColor
+            background-color $primaryBgAccentColor
 
           &.router-link-active
-            color $navlinkAccentColor
+            color $primaryTextAccentColor
 
             &::after
-              border-left-color $navlinkAccentColor
+              border-left-color $primaryTextAccentColor
 
 @media (max-width: $MQMobile)
   .dropdown-wrapper
