@@ -6,42 +6,44 @@
 // 滚动条宽度
 $scrollbarWidth = 0.5rem
 
-::-webkit-scrollbar-track-piece
-  background #fff
+.webkit-scrollbar
+  ::-webkit-scrollbar-track-piece
+    background #fff
 
-::-webkit-scrollbar
-  width $scrollbarWidth
-  height $scrollbarWidth
+  ::-webkit-scrollbar
+    width $scrollbarWidth
+    height $scrollbarWidth
 
-::-webkit-scrollbar-button
-  display none
+  ::-webkit-scrollbar-button
+    display none
 
-::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece
-  background -webkit-gradient(linear, left)
+  ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece
+    background -webkit-gradient(linear, left)
 
-::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal
-  border-radius $scrollbarWidth
-  background #bdbdbd
+  ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal
+    border-radius $scrollbarWidth
+    background #bdbdbd
 
-::-webkit-scrollbar-thumb:hover
-  background #8e8e8e
+  ::-webkit-scrollbar-thumb:hover
+    background #8e8e8e
 
-::-webkit-scrollbar-thumb:active
-  background #828181
+  ::-webkit-scrollbar-thumb:active
+    background #828181
 
-@media only screen and (min-width: 1500px)
+@media only screen and (min-width: $navbarContainerWidth)
   .navbar
     .navbar-container
       margin 0 auto
-      max-width 1400px
+      max-width $navbarContainerWidth
       position relative
 
       .links
         top 0
 
+@media only screen and (min-width: $pageContainerWidth)
   .page-container
     margin 0 auto
-    max-width 1400px
+    max-width $pageContainerWidth
 
     .sidebar
       left auto
