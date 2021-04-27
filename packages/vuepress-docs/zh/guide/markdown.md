@@ -43,6 +43,12 @@ VuePress 支持重定向到干净链接。如果一个链接 `/foo` 找不到，
 无论是否使用了 permalink 和 clean-urls 插件，你的相对路径都应该依赖于当前的文件结构来定义。在上面的例子中，即使你将 `/foo/one.md` 的路径设为了 `/foo/one/`，你依然应该通过 `./two.md` 来访问 `/foo/two.md`。
 :::
 
+### Page Suffix
+
+Pages and internal links get generated with the `.html` suffix by default.
+
+You can customize this by setting [config.markdown.pageSuffix](../config/README.md#markdown-pagesuffix).
+
 ### 外部链接
 
 外部的链接将会被自动地设置为  `target="_blank" rel="noopener noreferrer"`:
@@ -270,6 +276,46 @@ export default {
 }
 ```
 
+除了单行以外，你也可指定多行，行数区间，或是两者都指定。
+
+- 行数区间: 例如 `{5-8}`, `{3-10}`, `{10-17}`
+- 多个单行: 例如 `{4,7,9}`
+- 行数区间与多个单行: 例如 `{4,7-13,16,23-27,40}`
+
+**Input**
+
+````
+``` js{1,4,6-7}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VuePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+````
+
+**Output**
+
+``` js{1,4,6-8}
+export default { // Highlighted
+  data () {
+    return {
+      msg: `Highlighted!
+      This line isn't highlighted,
+      but this and the next 2 are.`,
+      motd: 'VuePress is awesome',
+      lorem: 'ipsum',
+    }
+  }
+}
+```
+
 ## 行号
 
 你可以通过配置来为每个代码块显示行号：
@@ -330,21 +376,46 @@ module.exports = {
 
 **输入**
 
-``` md
+```
 <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
 ```
 
 **输出**
 
 <!--lint disable strong-marker-->
-``` md
+
 <<< @/../@vuepress/markdown/__tests__/fragments/snippet.js{2}
-```
+
 <!--lint enable strong-marker-->
 
 ::: tip 注意
 由于代码段的导入将在 webpack 编译之前执行，因此你无法使用 webpack 中的路径别名，此处的 `@` 默认值是 `process.cwd()`。
 :::
+
+
+为了只导入对应部分的代码，你也可运用 [VS Code region](https://code.visualstudio.com/docs/editor/codebasics#_folding)。你可以在文件路径后方的 `#` 紧接着提供一个自定义的区域名称（预设为 `snippet` ）
+
+**输入**
+
+``` md
+<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1}
+```
+
+**代码文件**
+
+<!--lint disable strong-marker-->
+
+<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js
+
+<!--lint enable strong-marker-->
+
+**输出**
+
+<!--lint disable strong-marker-->
+
+<<< @/../@vuepress/markdown/__tests__/fragments/snippet-with-region.js#snippet{1}
+
+<!--lint enable strong-marker-->
 
 ## 进阶配置
 

@@ -33,7 +33,10 @@ module.exports = ctx => ({
     // #697 Provided by the official algolia team.
     algolia: ctx.isProd ? ({
       apiKey: '3a539aab83105f01761a137c61004d85',
-      indexName: 'vuepress'
+      indexName: 'vuepress',
+      algoliaOptions: {
+        facetFilters: ['tags:v1']
+      }
     }) : null,
     smoothScroll: true,
     locales: {
@@ -41,7 +44,6 @@ module.exports = ctx => ({
         label: 'English',
         selectText: 'Languages',
         ariaLabel: 'Select language',
-        searchPlaceholder: 'Search',
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last Updated',
         nav: require('./nav/en'),
@@ -173,6 +175,7 @@ function getThemeSidebar (groupA, introductionA) {
         'writing-a-theme',
         'option-api',
         'default-theme-config',
+        'blog-theme',
         'inheritance'
       ]
     }
