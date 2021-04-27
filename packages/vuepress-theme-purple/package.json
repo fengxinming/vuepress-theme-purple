@@ -8,18 +8,18 @@
     "url": "git+https://github.com/fengxinming/vuepress-theme-purple.git"
   },
   "keywords": [
+    "vue",
     "vuepress",
     "vuepress-theme",
-    "vuepress-theme-purple",
-    "vue"
+    "vuepress-theme-purple"
   ],
-  "author": "Jesse Feng",
+  "author": "Jesse Feng <fxm0016@126.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fengxinming/vuepress-theme-purple/issues"
   },
   "homepage": "https://github.com/fengxinming/vuepress-theme-purple#readme",
   "dependencies": {
-    "@vuepress/theme-default": "^1.2.0"
+    "@vuepress/theme-default": "^1.8.2"
   }
 }
