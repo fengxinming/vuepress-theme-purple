@@ -65,9 +65,9 @@ $searchboxBorderColor ?= $searchboxBgColor
 // 搜索框边框强调色
 $searchboxBorderAccentColor ?= lighten($primaryBgColor, 40%)
 // 修改默认字体颜色
-$textColor = $primaryBgColor
+$textColor ?= $primaryBgColor
 // 修改默认强调色
-$accentColor = #1890ff
+$accentColor ?= #ff6a00
 // 导航垂直空白高度
 $navbarVerticalPadding ?= 0.7rem
 // 导航水平空白宽度
