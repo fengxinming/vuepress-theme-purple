@@ -11,7 +11,7 @@
     "bootstrap": "tyarn install --no-lockfile",
     "vuepress-docs": "yarn run --cwd=./packages/vuepress-docs",
     "release": "npm publish ./packages/vuepress-theme-purple",
-    "gh-pages": "git subtree push --prefix=gh-pages origin gh-pages"
+    "gh-pages": "git subtree push --prefix=docs origin gh-pages"
   },
   "repository": {
     "type": "git",

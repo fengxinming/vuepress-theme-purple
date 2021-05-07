@@ -2,7 +2,7 @@ const { fs, path } = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
   base: '/vuepress-theme-purple/',
-  dest: path.join(__dirname, '../../../gh-pages'),
+  dest: path.join(__dirname, '../../../docs'),
   locales: {
     '/': {
       lang: 'en-US',
