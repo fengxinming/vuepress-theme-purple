@@ -1,8 +1,3 @@
-.navbar
-  background-color $primaryBgColor
-  color $primaryTextColor
-  box-shadow 0 0 1rem $primaryBgColor
-
 // 滚动条宽度
 $scrollbarWidth = 0.5rem
 
@@ -29,21 +24,3 @@ $scrollbarWidth = 0.5rem
 
   ::-webkit-scrollbar-thumb:active
     background #828181
-
-@media only screen and (min-width: $navbarContainerWidth)
-  .navbar
-    .navbar-container
-      margin 0 auto
-      max-width $navbarContainerWidth
-      position relative
-
-      .links
-        top 0
-
-@media only screen and (min-width: $pageContainerWidth)
-  .page-container
-    margin 0 auto
-    max-width $pageContainerWidth
-
-    .sidebar
-      left auto
