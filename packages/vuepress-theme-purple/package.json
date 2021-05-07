@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-purple",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A purple theme for Vuepress",
   "main": "index.js",
   "repository": {
