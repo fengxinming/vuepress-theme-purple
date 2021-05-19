@@ -2,9 +2,6 @@
 $scrollbarWidth = 0.5rem
 
 .webkit-scrollbar
-  ::-webkit-scrollbar-track-piece
-    background #fff
-
   ::-webkit-scrollbar
     width $scrollbarWidth
     height $scrollbarWidth
@@ -13,17 +10,17 @@ $scrollbarWidth = 0.5rem
     display none
 
   ::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece
-    background -webkit-gradient(linear, left)
+    background lighten($primaryBgColor, 90%)
 
   ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:horizontal
     border-radius $scrollbarWidth
-    background #bdbdbd
+    background lighten($primaryBgColor, 70%)
 
   ::-webkit-scrollbar-thumb:hover
-    background #8e8e8e
+    background lighten($primaryBgColor, 50%)
 
   ::-webkit-scrollbar-thumb:active
-    background #828181
+    background lighten($primaryBgColor, 30%)
 
 .theme-container
   background-color #f4f5f5
