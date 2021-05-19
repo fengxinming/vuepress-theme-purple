@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "bootstrap": "tyarn install --no-lockfile",
-    "vuepress-docs": "yarn run --cwd=./packages/vuepress-docs",
+    "bootstrap": "pnpm install",
+    "vuepress-docs": "pnpm run --dir=./packages/vuepress-docs",
     "release": "npm publish ./packages/vuepress-theme-purple",
     "gh-pages": "git subtree push --prefix=docs origin gh-pages"
   },
