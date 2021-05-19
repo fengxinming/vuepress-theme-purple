@@ -52,8 +52,6 @@ export { default } from '@parent-theme/components/Navbar.vue';
   background-color $primaryBgColor
   color $primaryTextColor
   box-shadow 0 0 1rem $primaryBgColor
-  padding $navbarVerticalPadding $navbarHorizontalPadding
-  line-height: $navbarHeight - $navbarVerticalPadding * 2
 
   .logo
     height: $navbarHeight - $navbarVerticalPadding * 2
@@ -75,6 +73,10 @@ export { default } from '@parent-theme/components/Navbar.vue';
 
         &:focus
           border-color $searchboxBorderAccentColor
+
+@media (min-width $MQMobile)
+  padding $navbarVerticalPadding $navbarHorizontalPadding
+  line-height: $navbarHeight - $navbarVerticalPadding * 2
 
 @media only screen and (min-width $navbarContainerWidth)
   .navbar
