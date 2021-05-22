@@ -1,7 +1,7 @@
 # vuepress-theme-purple
 A purple theme for Vuepress
 
-## [Online Demo](https://fengxinming.github.io/vuepress-theme-purple)
+## [Online Demo](https://fengxinming.github.io/vuepress-theme-purple/)
 
 ## [Documentation](packages/vuepress-theme-purple/README.md)
 
